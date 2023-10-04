@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Raleway:wght@400;500;600;700;800;900&display=swap');
+:root{
+  /*============== Palette Colors =============*/
+  --main-color: #1a2e49;
+  --secondary-color: #6b609e;
+  --tertiary-color: #549dae;
+  --grey-color: #b6b6b6;
+  --grey-platinium: #BDBDBD;
+  --black-medium: #b6b6b6;
+  --white-platinium: #F6F6F6;
+
+  /*============== Fonts =============*/
+  --headings: 'Manrope', sans-serif;
+  --paragraphs: 'Raleway', sans-serif;
+}
+
+/*====================== Global Styles ==================*/
+
+/*==== https://www.paulirish.com/2012/box-sizing-border-box-ftw/ ====*/
+html{
+  box-sizing: border-box;
+}
+
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+body{
+  font-family: var(--paragraphs);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+h1, h2, h3{
+  font-weight: 800;
+  margin: 1rem 0 4rem 0;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+h3{
+  font-size: 2.3rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+p{
+  color: var(--black-medium);
+  font-family: var(--paragraphs);
+  font-size: 1.5rem;
+}
+
+img{
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 70rem;
+  width: 100%;
+}
+
+.btn{
+  background-color: var(--secondary-color);
+  border: 1px solid var(--white-platinium);
+  color: var(--white-platinium);
+  cursor: pointer;
+  padding: .5rem 1.5rem;
+  transition: background-color .3s;
+}
+
+.btn:hover{
+  background-color: rgba(107, 96, 158, 0.7);
+}
+
+/*====================== Utilities =====================*/
+.text-center{
+  text-align: center;
+}
+
+.mt-5{
+  margin-top: 5rem;
+}
+
+/*====================== Header =====================*/
+.header-content{
+  background-image: linear-gradient(rgb(26 46 73 / .6), rgb(26 46 73 / .6)), url(../images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50rem;
+  padding: 5rem 0;
+}
+
+@media only screen and (min-width: 768px){
+  .header-content{
+    padding: 2rem 0;
+  }
+}
+
+.content-header{
+  color: var(--white-platinium);
+  display: flex;
+  flex-direction: column;
+  height: calc(60rem - 6rem);
+  justify-content: space-between;
+}
+
+.site-name{
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.site-name span{
+  font-weight: 800;
+}
+
+@media only screen and (min-width: 768px){
+  .nabvar{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contact-number{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-number a{
+  color: var(--white-platinium);
+  font-weight: 700;
+}
+
+.contact-number svg{
+  height: 1.7rem;
+  width: 1.7rem;
+}
+
+@media only screen and (min-width: 768px){
+  .contact-number{
+      align-items: flex-end;
+  }
+}
+
+.nabvar-navigation{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+@media only screen and (min-width:768px){
+  .nabvar-navigation{
+    flex-direction: row;
+  }
+}
+
+.nabvar-navigation a{
+  color: var(--white-platinium);
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+
+.nabvar-navigation a:hover{
+  background-color: rgb(246 246 246 / .3);
+  transition: background-color .4s;
+}
+
+.slogan-company{
+  text-align: center;
+}
+
+.slogan-company h1{
+  font-size: 2rem;
+  margin: 0;
+}
