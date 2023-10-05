@@ -245,15 +245,21 @@ img{
     grid-column: 1 / span 2;
     grid-row: 2 / span 2;
   }
+
+  .content-item-4:last-of-type{
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
+  }
+
+  .content-item-3:first-of-type{
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+  }
 }
 
-.content-item-2{
+.content-item-2,
+.content-item-4{
   background-color: var(--white-platinium);
   padding: 2rem;
   text-align: center;
-}
-
-
-.content-item-2 p{
-  color: var(--bla);
 }
