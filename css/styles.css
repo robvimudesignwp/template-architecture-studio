@@ -141,6 +141,7 @@ img{
   align-items: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .contact-number a{
@@ -148,7 +149,14 @@ img{
   font-weight: 700;
 }
 
-.contact-number svg{
+.content-info{
+  align-items: center;
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+}
+
+.content-info svg{
   height: 1.7rem;
   width: 1.7rem;
 }
@@ -169,6 +177,7 @@ img{
 @media only screen and (min-width:768px){
   .nabvar-navigation{
     flex-direction: row;
+    width: 100%;
   }
 }
 
@@ -314,4 +323,44 @@ img{
     grid-column: 3 / 4;
     grid-row: 1 / 3;
   }
+}
+
+/*=================== Footer ======================*/
+.site-footer{
+  border-top: 1px solid var(--grey-color);
+  margin: 5rem 0;
+}
+
+.grid-footer{
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (max-width: 768px){
+  .grid-footer{
+    grid-template-columns: unset;
+    justify-content: center;
+  }
+
+  .grid-footer > div{
+    margin: .5rem 0;
+  }
+  .site-footer h4,
+  .site-footer p,
+  .footer_menu a{
+    text-align: center;
+  }
+}
+
+.site-footer h4,
+.site-footer p{
+  color: var(--main-color);
+  text-align: center;
+}
+
+.footer_menu a{
+  color: var(--grey-color);
+  display: block;
+  text-align: center;
 }
